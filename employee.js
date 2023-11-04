@@ -1,10 +1,10 @@
-class Employee {
+class Employee { //Phase 01
     constructor(name, salary, title, manager = null) {
         this.name = name;
         this.salary = salary;
         this.title = title
         this.manager = manager;
-        if (manager !== null) {
+        if (manager !== null) { //Phase 3
             manager.addEmployee(this)
         }
     }
