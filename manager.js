@@ -11,7 +11,7 @@ class Manager extends Employee { // Phase 02.1
         employee.manager = this;
     }
 
-    _totalSubSalary() {
+    _totalSubSalary() { //Phase 04b
         let sum = 0
         for (let employee of this.employees) {
             if (employee instanceof Manager) {
@@ -23,7 +23,7 @@ class Manager extends Employee { // Phase 02.1
         return sum
     }
 
-    calculateBonus(multiplier) {
+    calculateBonus(multiplier) { //Phase 04b
         return (this.salary + this._totalSubSalary(this.employees)) * multiplier
     }
 

@@ -4,12 +4,12 @@ class Employee { //Phase 01
         this.salary = salary;
         this.title = title
         this.manager = manager;
-        if (manager !== null) { //Phase 3
+        if (manager !== null) { //Phase 03
             manager.addEmployee(this)
         }
     }
 
-    calculateBonus(multiplier) {
+    calculateBonus(multiplier) { //Phase 04a
         return (this.salary) * multiplier
     }
 
